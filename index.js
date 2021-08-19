@@ -22,11 +22,14 @@ for (let cellNumber = 1; cellNumber <= 76; cellNumber++) {
 
 } */
 
+function rN(){ 
+    let randomNumber = Math.floor(Math.random() * 77)
+    return randomNumber 
+}
+
 let highlightNumber = function() {
-    let randomNumber
-    function rN(){ 
-        let randomNumber = Math.floor(Math.random() * 77)
-        return randomNumber }
+    let randomNumber = rN()
+    
     
     let dong = document.getElementById(randomNumber)
     dong.classList.add("highlightedCell")
