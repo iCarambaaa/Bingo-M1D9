@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <!--
+        -------------- BINGO CHALLENGE REQUIREMENTS --------------
+        Create programmatically (with JS) a BINGO board with 76 cells, from 1 to 76.
+        Create a button to randomize a number from 1 to 76. The same number should be highlighted on the bingo board
+
+        -- NICE TO HAVE 
+        - Take ALWAYS a new number (eg. avoid randoming the number 10 3 times)
+        - Create a USER BOARD with 24 randomized numbers that highlights as the main board does
+        - Let the user choose HOW MANY user boards he's willing to play with and create them.
+
+
+        -------------- THINGS THAT WE HAVE TO IMPLEMENT --------------   -> DESIGN
+        -- HTML ELEMENTS
+        - a container for the Board
+        - Divs for each cell (dynamically generated)
+        - Button to randomize a number
+
+        -- JS ELEMENTS (Functions)
+        - Create 76 cells (1 to 76)
+        - randomize number on button click 
+        - highlight the randomized number
+    -->
+  <title>Strive Bingo</title>
+  <head>
+<style>
+
+h1 {
+  text-align: center;
+  color: burlywood;
+}
+
+.cell {
+  background-color: #f1ebeb;
+  color: burlywood;
+    display: inline-block;
+    width: 6.5%;
+    min-height: 64px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #8d8888;
+    border-radius: 8px;
+    margin: 3px;
+    padding-top: 32px;
+    
+}
+.highlightedCell {
+  border-color: #d31616;
+  color: #d31616;
+;
+}
+
+</style>
+  </head>
+  <body>
+
+    <h1>Strive Bingo Board</h1>
+
+    <div id= "board">
+
+    </div>
+    <button onclick="highlightNumber()">click for nummber</button>
+
+
+    <script src="index.js"></script>
+
+  </body>
